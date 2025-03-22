@@ -1,41 +1,36 @@
-# kata-bootstraps
+# Java JUnit5
 
-[![go-ci-badge]][ci-actions]
-[![java-ci-badge]][ci-actions]
-[![js-ci-badge]][ci-actions]
-[![php-ci-badge]][ci-actions]
-[![python-ci-badge]][ci-actions]
-[![rust-ci-badge]][ci-actions]
-[![ruby-ci-badge]][ci-actions]
-[![scala-ci-badge]][ci-actions]
-[![ts-ci-badge]][ci-actions]
+A minimal setup with Java, [JUnit5](https://junit.org/junit5/), [AssertJ](https://assertj.github.io/doc/) and [Mockito](https://site.mockito.org/) to get you started.
+
+You can use [gradle](https://gradle.org/) or [maven](https://maven.apache.org/)
+
+[More complicated JUnit5 setups](https://github.com/junit-team/junit5-samples)
+
+## Setup
+
+    git clone https://github.com/swkBerlin/kata-bootstraps
+    cd java/junit5
+
+Open as preexisting project in your favorite IDE and choose between gradle or maven nature
+
+## (optional) IDE Setup
+
+Run `./gradlew idea` to build [idea](https://www.jetbrains.com/idea) project.
+
+## Running Tests
+
+To execute the tests either run `./gradlew test`, `mvn test` or run the tests from the IDE you are using
+
+## Test Libraries Available from the Get-Go
+- [JUnit 5.8.2](https://junit.org/junit5/docs/snapshot/release-notes/#release-notes-5.8.2)
+- [AssertJ 3.22.0](https://assertj.github.io/doc/#assertj-core-release-notes)
+- [Mockito 4.3.1](https://github.com/mockito/mockito/releases)
 
 
+## Additional Libraries
+- [Vavr](https://www.vavr.io/) a functional library for Java.
 
-Empty projects for e.g. Katas with testing support in different languages
-(usually with a failing test, in order to know where to start)
 
-On the top level you can find different languages that are supported.
+This repo was tested with [idea](https://www.jetbrains.com/idea) [2020.3.1](https://confluence.jetbrains.com/display/IDEADEV/IntelliJ+IDEA+2020.3.1+%28203.6682.168+build%29+Release+Notes), if you encounter problems please open an issue or send a pull request.
 
-On the second level (in a particular language's directory) you'll find
-different testing frameworks that are supported.
-
-In each directory for a particular framework, there is always `README.md` file
-that contains various useful information. At minimum it contains the
-information on how to install the dependencies and run the tests.
-
-You are welcome to contribute by submitting likewise a min setup for your language or framework of choice with a pull request. If possible please also create a [github workflow](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#in-this-article).
-
-----
-[Cookiecutter](https://github.com/audreyr/cookiecutter) has a similar goal and also supports multiple languages for setting up a bare project.
-
-[go-ci-badge]:../../../kata-bootstraps/workflows/GO%20CI/badge.svg "CI build status"
-[java-ci-badge]:../../../kata-bootstraps/workflows/Java%20CI/badge.svg "CI build status"
-[js-ci-badge]:../../../kata-bootstraps/workflows/js%20CI/badge.svg "CI build status"
-[php-ci-badge]:../../../kata-bootstraps/workflows/PHP%20CI/badge.svg "CI build status"
-[python-ci-badge]:../../../kata-bootstraps/workflows/Python%20CI/badge.svg "CI build status"
-[rust-ci-badge]:../../../kata-bootstraps/workflows/Rust%20CI/badge.svg "CI build status"
-[ruby-ci-badge]:../../../kata-bootstraps/workflows/Ruby%20CI/badge.svg "CI build status"
-[scala-ci-badge]:../../../kata-bootstraps/workflows/Scala%20CI/badge.svg "CI build status"
-[ts-ci-badge]:../../../kata-bootstraps/workflows/ts%20CI/badge.svg "CI build status"
-[ci-actions]:../../../kata-bootstraps/actions
+Have fun!
